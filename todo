@@ -1,0 +1,7 @@
+- replace unsigned char madness with uint8_t
+- fix compiler warnings
+- webserver support / as path
+- web-server on port 80?
+- check delay/logic in master requests
+- add individual status indicator to sensors in web-app (compare to previous data response, if read-time hasn't change, make it red)
+- set Pi as DNS server and assign better hostname
