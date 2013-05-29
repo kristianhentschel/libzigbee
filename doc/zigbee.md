@@ -10,14 +10,14 @@ XBee Firmware Programming
 To my knowledge, the simplest way to change a ZigBee module's firmware and experiment with the options is through Digi's X-CTU software [xctu]. This requires access to a Windows computer and some way to connect the ZigBee module to your computer's serial port.
 
 ### ZigBee to PC connection
-Digi recommends purchasing a $25 adapter such as the XBee Explorer USB [sparkfun-explorer].
+Digi recommends purchasing a $25 adapter such as the XBee Explorer USB: [sparkfun-explorer]
 
-Instead, we used an Arduino board we had lying around, and built a simple level-converter from 2 resistors and a 74-series AND gate on a breadboard, which worked just as well. 
+Instead, we used an Arduino Uno (with the microcontroller removed) we had already lying around, and built a simple level-converter from 2 resistors and a 74-series AND gate on a breadboard, which worked just as well. 
 
 ![Arduino to XBee level converter](img/arduino-xbee-levels.png)
 
 ### Firmware Programming
-Once you have connected your XBee module to your computer and installed the X-CTU software, you should confirm that the module is detected by the software. Then switch to the `Modem Configuration` tab. Press `Read` to display the current configuration. Then select the desired firmware version (You'll want _ZIGBEE * API_) from the `Function Set` dropdown menu, and update your module by clicking `Write`.
+Once you have connected your XBee module to your computer and installed the X-CTU software, you should confirm that the module is detected by the software. Then switch to the `Modem Configuration` tab. Press `Read` to display the current configuration. Then select the desired firmware version (You'll want one of the three _ZIGBEE ... API_ versions) from the `Function Set` dropdown menu, and update your module by clicking `Write`.
 
 ZigBee Options
 --------------
@@ -33,5 +33,4 @@ There are various options to configure. While your application can easily change
 [zigbee-datasheet]: ftp://ftp1.digi.com/support/documentation/90000866_A.pdf
 [sparkfun-xbee]: https://www.sparkfun.com/products/10414 
 [sparkfun-explorer]: https://www.sparkfun.com/products/8687 
- 
-[xctu]: 
+[xctu]: http://www.digi.com/support/productdetail?pid=3352
