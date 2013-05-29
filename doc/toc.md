@@ -3,6 +3,9 @@ libzigbee (working title)
 
 This library is intended to provide a common interface on both linux machines (in particular, the RaspberryPi) and small embedded devices (e.g. the ST Discovery ARM Cortex M series) to the Zigbee2 family of radio transceivers. This guide will explain the library API after covering setup of the transceivers, operating systems, and embedded devices.
 
+**DISCLAIMER:** This documentation is currently under construction and most sections are written based on memory and old project notes. I describe what worked best for me, and that may not necessarily be the best way to do something. If you have anything to add, feel free to email me, comment, or fork the repository and submit a pull request.
+
+
 Prerequisites
 -------------
 
